@@ -49,10 +49,10 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 
-COPY *.py /app/
+COPY *.py /app/
 RUN chmod a+x *.py
 
-CMD ["python", "./main.py"]
+CMD ["python", "./main.py"]
 ```
 
 ## Build and run your new linkextractor API
