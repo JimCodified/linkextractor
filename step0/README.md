@@ -41,14 +41,39 @@ ENTRYPOINT ["python", "./linkextractor.py"]
 
 ## Build the image
 
-`docker build . -t linkextractor:v0`
+`docker build . -t linkextractor:v1`
 
 
 ## Run the container
 
-`docker run linkextractor:v0 https://docker.com`
+`docker run linkextractor:v1 https://docker.com`
 
 You can use any URL you want above.
+
+
+## Run through your inner loop
+
+To demonstrate how you might code and test locally we'll make a minor modification to the Python code (it's a small change -- you don't need to know Python).
+
+1. Open `linkextractor.py` in your favorite code editor
+2. The last line of the current code looks like this:
+
+```python
+    print(link.get("href"))
+```
+
+3. Change that line to look like this:
+
+```python
+    print("-->", link.get("href"))
+```
+
+4. Build and run the containers again. Notice the `v1.1` tag. This helps tell the images apart and prevents overwriting the first image you created.
+
+```bash
+docker build . -t linkextractor:v1.1
+docker run linkextractor:v1.1 https://docker.com
+```
 
 ## Move ahead to Step 2
 
