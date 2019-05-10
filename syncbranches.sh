@@ -2,7 +2,7 @@
 
 git checkout master
 
-tmpdir=/tmp/`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1`
+tmpdir=/tmp/`cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1`
 mkdir -p $tmpdir
 
 cp -rf step* $tmpdir
