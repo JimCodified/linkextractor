@@ -49,3 +49,7 @@ ENTRYPOINT ["python", "./linkextractor.py"]
 `docker run linkextractor:v0 https://docker.com`
 
 You can use any URL you want above.
+
+## Move ahead to Step 2
+
+`git checkout -f step2`
