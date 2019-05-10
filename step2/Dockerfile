@@ -1,5 +1,5 @@
-FROM       python:3
-LABEL      maintainer="Sawood Alam <@ibnesayeed>"
+FROM       python:3.7-alpine
+LABEL      maintainer="Jim Armstrong <@jdarmstro>"
 
 RUN        pip install beautifulsoup4
 RUN        pip install requests
