@@ -1,5 +1,8 @@
 # Link Extractor: Step 1
 
+*Note:* This version of the workshop skips Step 1 since we manually create the Dockerfile in Step 0.
+You can use this step to fast-forward if you want.
+
 A basic page scraping script that prints out all the hyper references of the given web page.
 
 ## Changes from the previous step
