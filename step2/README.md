@@ -78,6 +78,9 @@ Try `http://localhost:5000/api/http://docker.com` and you should see the API's J
 
 You can access the running container logs with the command `docker container logs linkextractor`
 
+## The inner code-build-test loop so far
+So far, each time we update our code we have to rebuild the container and run it again to see our changes. It's not terribly difficult and rebuilds happen pretty fast due to Docker Engine caching, tut with Docker Desktop we can do some clever things to see our changes "live" as we save our code. We'll explore this in the next step.
+
 ## Cleanup
 Stop and remove the container app:
 `docker container rm -f linkextractor`
