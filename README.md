@@ -1,6 +1,6 @@
 # Link Extractor: Step 3
 
-A basic page scraping server that returns all the hyper references and anchor texts of the given web page in JSON.
+**Note:** In this workshop we do not use Step 3 because in Step 2 we go through the process of manually making the changes shown below. Basically, at the end of Step 2 in the workshop the result is functionally equivalent to Step 3.
 
 ## Changes from the previous step
 
